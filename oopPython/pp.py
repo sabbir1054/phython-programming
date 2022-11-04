@@ -1,8 +1,9 @@
-class Person:
-    def __init__(self, id):
-        self.id = id
-
-sam = Person(100)
-sam.__dict__['age'] = 49
-
-print (sam.age + len(sam.__dict__))
+def mk(x):
+    def mk1():
+        print("Decorated")
+        x()
+    return mk1
+def mk2():
+    print("Ordinary")
+p = mk(mk2)
+p()

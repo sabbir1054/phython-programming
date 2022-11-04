@@ -4,5 +4,5 @@ class Phone:
         self.price=price
         self.color=color
 
-    def send_sms(self,number,text):
-        sms=f'sending : {'
+    # def send_sms(self,number,text):
+        # sms=f'sending : {'
