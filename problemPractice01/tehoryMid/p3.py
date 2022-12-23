@@ -1,14 +1,15 @@
-word = 'geeks for geeks'
+def nearly_equal(a,b):
+	count=-1
+	for letter in a:
+		for letter2 in b:
+			if letter==letter2:
+				count+=1
+	strlen=len(a)
+	if count+1==strlen:
+		print("True")
+	else:
+		print("False")
 
-# returns first occurrence of Substring
-result = word.find('geeks')
-print("Substring 'geeks' found at index:", result)
+	
 
-result = word.find('for')
-print("Substring 'for ' found at index:", result)
-
-# How to use find()
-if word.find('pawan') != -1:
-	print("Contains given substring ")
-else:
-	print("Doesn't contains given substring")
+nearly_equal("perl","pearl")

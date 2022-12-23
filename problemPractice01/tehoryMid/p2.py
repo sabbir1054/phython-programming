@@ -9,3 +9,6 @@ broken_text=(f.read()).split(" \n")
 
 for text in broken_text:
     center_align(text)
+
+
+# this code take inputs from text file
